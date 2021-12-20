@@ -1,0 +1,127 @@
+"*********************************************************************
+" ideavimrc
+"*********************************************************************
+
+set NERDTree
+set ideajoin
+set surround
+
+" Change mapleader
+let mapleader = ' '
+let maplocalleader = ','
+
+" Use the OS clipboard by default
+set clipboard+=unnamed
+
+" Enable native idea paste action for put operations
+set clipboard+=ideaput
+
+" Ignore case of searches
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Show the current mode
+set showmode
+
+" Enable line numbers
+set number
+
+" Highlight dynamically as pattern is typed
+set incsearch
+
+" Use relative line numbers
+" if exists("&relativenumber")
+"   set relativenumber
+" endif
+
+nnoremap Y y$
+nmap S <Action>(Find)
+nmap s <Action>(Find)
+vmap S <Action>(Find)
+vmap s <Action>(Find)
+
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-d> <Del>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
+
+nmap <C-k> <Action>(GotoPreviousError)
+nmap <C-j> <Action>(GotoNextError)
+nmap <C-n> <Action>(NextTab)
+nmap <C-p> <Action>(PreviousTab)
+nmap <C-o> <Action>(Back)
+nmap <C-i> <Action>(Forward)
+
+nmap <Leader>1 <Action>(GoToTab1)
+nmap <Leader>2 <Action>(GoToTab2)
+nmap <Leader>3 <Action>(GoToTab3)
+nmap <Leader>4 <Action>(GoToTab4)
+nmap <Leader>5 <Action>(GoToTab5)
+nmap <Leader>6 <Action>(GoToTab6)
+nmap <Leader>7 <Action>(GoToTab7)
+nmap <Leader>8 <Action>(GoToTab8)
+nmap <Leader>9 <Action>(GoToTab9)
+
+nmap <Leader><Tab> <Action>(GotoAction)
+xmap <Leader><Tab> <Action>(GotoAction)
+omap <Leader><Tab> <Action>(GotoAction)
+
+nmap <Leader>= <Action>(ReformatCode)
+if &ide =~? 'pycharm'
+    nmap <Leader>= <Action>(Tool_External Tools_Black)
+endif
+
+nmap <Leader>bd <Action>(CloseContent)
+nmap <Leader>bh <Action>(LocalHistory.ShowHistory)
+nmap <Leader>bo <Action>(CloseAllEditorsButActive)
+nmap <Leader>bw <Action>(CloseEditor)
+
+nmap <Leader>c<Space> <Action>(CommentByLineComment)
+vmap <Leader>c<Space> <Action>(CommentByLineComment)
+nmap <Leader>cl <Action>(CloseAllToTheLeft)
+nmap <Leader>cr <Action>(CloseAllToTheRight)
+nmap <Leader>cu <Action>(CloseAllUnmodifiedEditors)
+
+nmap <Leader>ff <Action>(SearchEverywhere)
+nmap <Leader>fh <Action>(RecentFiles)
+nmap <Leader>fs <Action>(RecentChangedFiles)
+
+nmap <Leader>gb <Action>(Annotate)
+nmap <Leader>gd <Action>(Compare.LastVersion)
+nmap <Leader>gf <Action>(Git.Fetch)
+nmap <Leader>gg <Action>(GotoFile)
+nmap <Leader>gm <Action>(Git.Merge)
+nmap <Leader>gl <Action>(Git.Pull)
+nmap <Leader>gs <Action>(ActivateVersionControlToolWindow)
+nmap <Leader>gv <Action>(LocalHistory.ShowHistory)
+
+nmap <Leader>jd <Action>(GotoDeclarationOnly)
+nmap <Leader>jj <Action>(GotoImplementation)
+nmap <Leader>js <Action>(GotoSuperMethod)
+nmap <Leader>jr <Action>(ShowUsages)
+nmap <Leader>jl <Action>(JumpToLastChange)
+
+nmap <Leader>sa <Action>(FindInPath)
+nmap <Leader>sg <Action>(FindInPath)
+nmap <Leader>sr <Action>(FindInPath)
+
+nmap <Leader>tt <Action>(ActivateStructureToolWindow)
+
+nmap <Leader>yf <Action>(CopyPaths)
+nmap <Leader>yn <Action>(CopyReference)
+
+nmap ,K <Action>(QuickJavaDoc)
+nmap ,k <Action>(ExpressionTypeInfo)
+
+nnoremap <Leader>nn :NERDTreeFocus<CR>
+nnoremap <Leader>nj :NERDTreeFind<CR>
+nnoremap <Leader>tn :NERDTreeToggle<CR>
+
+if filereadable(expand('~/.ideavimrc.local'))
+  source ~/.ideavimrc.local
+endif
