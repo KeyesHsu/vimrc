@@ -240,6 +240,8 @@ autocmd vimenter * ++nested colorscheme gruvbox
 " Variables
 "*********************************************************************
 let g:airline#extensions#tabline#enabled = 1
+" Configure the formatting of filenames (see |filename-modifiers|).
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme='gruvbox'
 
 let g:gruvbox_termcolors = 256
