@@ -128,6 +128,9 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+
+Plug '907th/vim-auto-save'
+
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'editorconfig/editorconfig-vim'
@@ -239,6 +242,11 @@ autocmd vimenter * ++nested colorscheme gruvbox
 "*********************************************************************
 " Variables
 "*********************************************************************
+
+" Enable AutoSave on Vim startup
+let g:auto_save = 1
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
+
 let g:airline#extensions#tabline#enabled = 1
 " Configure the formatting of filenames (see |filename-modifiers|).
 let g:airline#extensions#tabline#fnamemod = ':t'
