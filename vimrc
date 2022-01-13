@@ -230,6 +230,9 @@ nnoremap <silent> <Leader>yf :let @+ = expand("%:p")<CR>
 " Yank relative path of current buffer
 nnoremap <silent> <Leader>yn :let @+ = expand("%")<CR>
 
+nmap <Leader><Tab> <Plug>(fzf-maps-n)
+xmap <Leader><Tab> <Plug>(fzf-maps-x)
+
 "*********************************************************************
 " Autocommands
 "*********************************************************************
