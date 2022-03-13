@@ -279,6 +279,8 @@ let $PYTHONUNBUFFERED=1
 let NERDTreeShowHidden=1
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+" Turn on natural sorting
+let NERDTreeNaturalSort = 1
 let g:NERDCustomDelimiters = {'python': {'left': '#'}}
 
 "*********************************************************************
