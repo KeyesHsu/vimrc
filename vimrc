@@ -210,8 +210,6 @@ nnoremap <Leader>jj :YcmCompleter GoToDefinition<CR>
 nnoremap <Leader>jr :YcmCompleter GoToReferences<CR>
 nnoremap <LocalLeader>K :YcmCompleter GetDoc<CR>
 nnoremap <LocalLeader>k :YcmCompleter GetType<CR>
-" Use <Enter> to accept
-inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 nnoremap <Leader>= :Autoformat<CR>
 vnoremap <Leader>= :Autoformat<CR>
