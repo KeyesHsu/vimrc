@@ -43,8 +43,8 @@ vmap S <Action>(Find)
 vmap s <Action>(Find)
 
 " Defining handlers for the shortcuts that exist for both IDE and Vim
-sethandler <C-A> i:vim n:ide
-sethandler <C-E> i:vim n:ide
+sethandler <C-A> n-i:vim
+sethandler <C-E> n-i:vim
 sethandler <C-N> n-i:vim
 sethandler <C-P> n-i:vim
 sethandler <C-B> n-i:vim
