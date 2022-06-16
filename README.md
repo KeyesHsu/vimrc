@@ -7,7 +7,7 @@
 
 > A simple vim configuration.
 
-It's the smallest version that can be used comfortably for me, will continue to use and tweak.
+It's a single-file, for daily development use version, will continue to use and tweak.
 
 ## Install
 
