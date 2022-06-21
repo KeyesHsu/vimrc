@@ -55,6 +55,9 @@ set secure
 " Highlight dynamically as pattern is typed
 set incsearch
 
+" Highlight searches
+set hlsearch
+
 " Enhance command-line completion
 set wildmenu
 set wildmode=longest:full,full
@@ -162,6 +165,12 @@ Plug 'schickling/vim-bufonly'
 Plug 'skywind3000/asyncrun.vim'
 
 Plug 'tpope/vim-surround'
+
+" Automatically clear highlight
+Plug 'haya14busa/is.vim'
+
+" Automatically highlight current word under the cursor
+Plug 'RRethy/vim-illuminate'
 
 " Initialize plugin system
 call plug#end()
@@ -282,6 +291,11 @@ let g:NERDSpaceDelims = 1
 " Turn on natural sorting
 let NERDTreeNaturalSort = 1
 let g:NERDCustomDelimiters = {'python': {'left': '#'}}
+
+" Time in milliseconds (default 0)
+let g:Illuminate_delay = 250
+" Disabled for various filetypes
+let g:Illuminate_ftblacklist = ['nerdtree']
 
 "*********************************************************************
 " Appearance
