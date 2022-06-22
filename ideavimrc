@@ -83,9 +83,6 @@ xmap <Leader><Tab> <Action>(GotoAction)
 omap <Leader><Tab> <Action>(GotoAction)
 
 nmap <Leader>= <Action>(ReformatCode)
-if &ide =~? 'pycharm'
-    nmap <Leader>= <Action>(Tool_External Tools_Black)
-endif
 
 nmap <Leader>bd <Action>(CloseContent)
 nmap <Leader>bh <Action>(LocalHistory.ShowHistory)
