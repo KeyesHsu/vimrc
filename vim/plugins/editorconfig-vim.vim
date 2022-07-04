@@ -1,9 +1,5 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/editorconfig/editorconfig-vim
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+Plug 'editorconfig/editorconfig-vim'

@@ -1,9 +1,5 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/tpope/vim-surround
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+Plug 'tpope/vim-surround'

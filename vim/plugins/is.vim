@@ -1,9 +1,6 @@
 "*********************************************************************
-" Vimrc
+" haya14busa/is.vim
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+" Automatically clear highlight
+Plug 'haya14busa/is.vim'

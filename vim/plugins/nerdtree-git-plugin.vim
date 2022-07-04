@@ -1,9 +1,5 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/Xuyuanp/nerdtree-git-plugin
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+Plug 'Xuyuanp/nerdtree-git-plugin'

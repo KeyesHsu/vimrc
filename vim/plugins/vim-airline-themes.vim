@@ -1,9 +1,7 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/vim-airline/vim-airline-themes
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
+Plug 'vim-airline/vim-airline-themes'
 
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+" let g:airline_theme='gruvbox'

@@ -1,9 +1,5 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/jiangmiao/auto-pairs
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
-
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+Plug 'jiangmiao/auto-pairs'

@@ -11,23 +11,10 @@ It's a single-file, for daily development use version, will continue to use and 
 
 ## Install
 
-
-Create backups, swapfiles and undo history directory if does not exists.
-
-```bash
-mkdir -p ~/.vim/{backups,swaps,undo}
-```
-
-Link the [vimrc](vimrc) to `~/.vimrc`
+Run command:
 
 ```bash
-ln -s "$PWD/vimrc" ~/.vimrc
-```
-
-Or
-
-```bash
-cp vimrc ~/.vimrc
+source bootstrap.sh
 ```
 
 ## Uninstall

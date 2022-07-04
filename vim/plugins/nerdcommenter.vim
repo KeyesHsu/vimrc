@@ -1,9 +1,7 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/scrooloose/nerdcommenter
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
+Plug 'preservim/nerdcommenter'
 
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+let g:NERDCustomDelimiters = {'python': {'left': '#'}}

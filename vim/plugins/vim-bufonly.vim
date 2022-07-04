@@ -1,9 +1,7 @@
 "*********************************************************************
-" Vimrc
+" https://github.com/schickling/vim-bufonly
 "*********************************************************************
 
-" Enable nocompatible
-set nocompatible
+Plug 'schickling/vim-bufonly'
 
-execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/.vim/init.vim'
-
+nnoremap <Leader>bo :BufOnly<CR>
