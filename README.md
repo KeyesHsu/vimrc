@@ -7,7 +7,7 @@
 
 > A simple vim configuration.
 
-It's a single-file, for daily development use version, will continue to use and tweak.
+A simple but powerful vim configuration, will continue to use and tweak.
 
 ## Install
 
