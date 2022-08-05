@@ -32,9 +32,7 @@ set number
 set incsearch
 
 " Use relative line numbers
-" if exists("&relativenumber")
-"   set relativenumber
-" endif
+set relativenumber
 
 nnoremap Y y$
 nmap S <Action>(Find)
@@ -44,14 +42,15 @@ vmap s <Action>(Find)
 
 " Defining handlers for the shortcuts that exist for both IDE and Vim
 sethandler <C-A> n-i:vim
-sethandler <C-E> n-i:vim
-sethandler <C-N> n-i:vim
-sethandler <C-P> n-i:vim
 sethandler <C-B> n-i:vim
+sethandler <C-E> n-i:vim
 sethandler <C-F> n-i:vim
-sethandler <C-J> n:vim
-sethandler <C-O> n:vim
 sethandler <C-I> n:vim
+sethandler <C-J> n:vim
+sethandler <C-N> n-i:vim
+sethandler <C-O> n:vim
+sethandler <C-P> n-i:vim
+sethandler <C-W> n:vim
 
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
@@ -106,7 +105,8 @@ nmap <Leader>gg <Action>(GotoFile)
 nmap <Leader>gm <Action>(Git.Merge)
 nmap <Leader>gl <Action>(Git.Pull)
 nmap <Leader>gs <Action>(ActivateVersionControlToolWindow)
-nmap <Leader>gv <Action>(LocalHistory.ShowHistory)
+nmap <Leader>gv <Action>(ActivateCommitToolWindow)
+nmap <Leader>gV <Action>(ActivateVersionControlToolWindow)
 
 nmap <Leader>jd <Action>(GotoDeclarationOnly)
 nmap <Leader>jj <Action>(GotoImplementation)
@@ -129,6 +129,8 @@ nmap ,k <Action>(ExpressionTypeInfo)
 nnoremap <Leader>nn :NERDTreeFocus<CR>
 nnoremap <Leader>nj :NERDTreeFind<CR>
 nnoremap <Leader>tn :NERDTreeToggle<CR>
+
+nmap <Leader>: <Action>(ChooseRunConfiguration)
 
 if filereadable(expand('~/.ideavimrc.local'))
   source ~/.ideavimrc.local
