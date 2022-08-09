@@ -20,6 +20,7 @@ let s:enabled_lugins = [
             \ 'nerdcommenter.vim',
             \ 'nerdtree-git-plugin.vim',
             \ 'nerdtree.vim',
+            \ 'tmuxline.vim',
             \ 'vim-airline-themes.vim',
             \ 'vim-airline.vim',
             \ 'vim-auto-save.vim',
@@ -32,7 +33,7 @@ let s:enabled_lugins = [
             \ 'YouCompleteMe.vim',
             \ ]
 
-function! s:load_plugins()
+function! s:load_builtin_plugins()
     for plugin in s:enabled_lugins
         if matchend(plugin, '\.vim') == len(plugin)
             call TrySource(s:dirname . '/' . plugin)
@@ -42,9 +43,19 @@ function! s:load_plugins()
     endfor
 endfunction
 
+function! s:load_custom_plugins()
+  for plugin in g:custom_plugins
+    if len(plugin) > 1
+      execute "Plug '" . plugin[0] . "', " .join(plugin[1:], ',')
+    else
+      execute "Plug '" . plugin[0] . "'"
+    endif
+  endfor
+endfunction
 
 " Load plugins
 call plug#begin('~/.vim/plugged')
-call s:load_plugins()
+call s:load_builtin_plugins()
+call s:load_custom_plugins()
 call plug#end()
 

@@ -5,6 +5,7 @@
 let s:dirname = fnamemodify(expand('<sfile>'), ':h')
 
 let s:scripts = [
+            \ 'variables.vim',
             \ 'general.vim',
             \ 'keymap.vim',
             \ 'plugins/__init__.vim',

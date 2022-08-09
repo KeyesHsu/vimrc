@@ -4,4 +4,5 @@
 
 Plug 'vim-airline/vim-airline-themes'
 
-" let g:airline_theme='gruvbox'
+let g:airline_theme =
+      \ get(g:, 'airline_theme', tolower(g:custom_colorscheme))

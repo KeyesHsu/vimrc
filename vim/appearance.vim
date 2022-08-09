@@ -3,11 +3,10 @@
 "*********************************************************************
 
 " Set theme background
-if $background == "light"
-    set background=light
-else
-    set background=dark
-endif
+execute 'set background=' . g:custom_background
+
+" Set theme colorscheme
+execute 'colorscheme ' . g:custom_colorscheme
 
 " Disable the preview window
 set completeopt-=preview

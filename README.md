@@ -21,6 +21,11 @@ source bootstrap.sh
 
 Run `rm ~/.vimrc`
 
+## Adding your own customization
+
+To conveniently add your own customization, copy [vimrc.preload](vimrc.preload)
+to `~/.vimrc.preload`, and [vimrc.afterload](vimrc.afterload) to `~/.vimrc.afterlaod`.
+
 ## Consistent experience for IdeaVim
 
 Link the [ideavimrc](ideavimrc) to `~/.ideavimrc`:

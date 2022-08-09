@@ -1,6 +1,5 @@
 "*********************************************************************
-" https://github.com/morhetz/gruvbox
+" https://github.com/edkolev/tmuxline.vim
 "*********************************************************************
 
-Plug 'morhetz/gruvbox'
-
+Plug 'edkolev/tmuxline.vim'
