@@ -47,6 +47,7 @@ sethandler <C-E> n-i:vim
 sethandler <C-F> n-i:vim
 sethandler <C-I> n:vim
 sethandler <C-J> n:vim
+sethandler <C-K> n:vim
 sethandler <C-N> n-i:vim
 sethandler <C-O> n:vim
 sethandler <C-P> n-i:vim
@@ -132,6 +133,3 @@ nnoremap <Leader>tn :NERDTreeToggle<CR>
 
 nmap <Leader>: <Action>(ChooseRunConfiguration)
 
-if filereadable(expand('~/.ideavimrc.local'))
-  source ~/.ideavimrc.local
-endif
