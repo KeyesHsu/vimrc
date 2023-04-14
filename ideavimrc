@@ -133,3 +133,5 @@ nnoremap <Leader>tn :NERDTreeToggle<CR>
 
 nmap <Leader>: <Action>(ChooseRunConfiguration)
 
+nnoremap <Leader>dm :execute 'delm!'<CR>
+nnoremap <Leader>dM :execute 'delm A-Z0-9'<CR>
