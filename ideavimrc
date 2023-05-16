@@ -83,6 +83,7 @@ xmap <Leader><Tab> <Action>(GotoAction)
 omap <Leader><Tab> <Action>(GotoAction)
 
 nmap <Leader>= <Action>(ReformatCode)
+vmap <Leader>= <Action>(ReformatCode)
 
 nmap <Leader>bd <Action>(CloseContent)
 nmap <Leader>bh <Action>(LocalHistory.ShowHistory)
@@ -130,6 +131,8 @@ nmap ,k <Action>(ExpressionTypeInfo)
 nnoremap <Leader>nn :NERDTreeFocus<CR>
 nnoremap <Leader>nj :NERDTreeFind<CR>
 nnoremap <Leader>tn :NERDTreeToggle<CR>
+
+nmap <Leader>tm <Action>(ActivateTerminalToolWindow)
 
 nmap <Leader>: <Action>(ChooseRunConfiguration)
 
