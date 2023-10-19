@@ -21,3 +21,10 @@ endif
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
+
+" Use relative line numbers
+if exists("&relativenumber")
+  set relativenumber
+  autocmd BufReadPost * set relativenumber
+endif
+
