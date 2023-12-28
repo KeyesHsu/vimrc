@@ -92,6 +92,7 @@ nmap <Leader>bw <Action>(CloseEditor)
 
 nmap <Leader>c<Space> <Action>(CommentByLineComment)
 vmap <Leader>c<Space> <Action>(CommentByLineComment)
+nmap <Leader>ca <Action>(HideAllWindows)
 nmap <Leader>cl <Action>(CloseAllToTheLeft)
 nmap <Leader>cr <Action>(CloseAllToTheRight)
 nmap <Leader>cu <Action>(CloseAllUnmodifiedEditors)
